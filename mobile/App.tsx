@@ -4,8 +4,7 @@ import {
   Inter_700Bold,
   Inter_800ExtraBold, useFonts
 } from '@expo-google-fonts/inter';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar, StyleSheet, Text, View } from 'react-native';
 import { Loading } from './src/components/Loading';
 
 export default function App() {
@@ -25,7 +24,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Tamu Aqui!</Text>
-      <StatusBar style="auto" />
+      <StatusBar barStyle="light-content" backgroundColor="transparent" translucent />
     </View>
   );
 }
